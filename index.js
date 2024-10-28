@@ -3,11 +3,13 @@ let tal1 = prompt("Enter any number");
 let tal2 = prompt("Enter another number");
 let calculate = prompt("Which of these calculations do you want to use (+, -, *, /)?");
 let sum;
+let nTal1 = Number(tal1);
+let nTal2 = Number(tal2);
 
-//OBS!! Addition blir fel!!!
+
 if (calculate == "+"){
-    sum = (tal1 + tal2);
-    alert(tal1 + " + " + tal2 + " = " + sum);
+    sum = (nTal1 + nTal2);
+    alert(nTal1 + " + " + nTal2 + " = " + sum);
 
 }else if (calculate == "-"){
     sum = (tal1 - tal2);
